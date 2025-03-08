@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="keys" id="keysContainer">
+        <div data-key="a" class="key">A<br>
+            <span>kick</span>
+        </div>
+        <div data-key="s" class="key">S<br>
+            <span>snare</span>
+        </div>
+        <div data-key="d" class="key">D<br>
+            <span>hi-hat closed</span>
+        </div>
+        <div data-key="f" class="key">F<br>
+            <span>hi-hat open</span>
+        </div>
+        <div data-key="g" class="key">G<br>
+            <span>low tom</span>
+        </div>
+        <div data-key="h" class="key">H<br>
+            <span>mid tom</span>
+        </div>
+        <div data-key="j" class="key">J<br>
+            <span>high tom</span>
+        </div>
+        <div data-key="k" class="key">K<br>
+            <span>crash cymbal</span>
+        </div>
+        <div data-key="l" class="key">L<br>
+            <span>ride cymbal</span>
+        </div>
+    </div>
+    <audio data-key="a" src="./audio/A_kick.wav"></audio>
+    <audio data-key="d" src="./audio/D_hi-hat-closed.wav"></audio>
+    <audio data-key="f" src="./audio/F_hi-hat-open.mp3"></audio>
+    <audio data-key="g" src="./audio/G_tom-low.wav"></audio>
+    <audio data-key="h" src="./audio/H_tom-mid.wav"></audio>
+    <audio data-key="j" src="./audio/J_tom-high.wav"></audio>
+    <audio data-key="k" src="./audio/K_crash-cymbal.wav"></audio>
+    <audio data-key="l" src="./audio/L_ride-cymbal.wav"></audio>
+    <audio data-key="s" src="./audio/S_snare.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

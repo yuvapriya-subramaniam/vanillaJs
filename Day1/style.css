@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: url('https://www.artsprofessional.co.uk/wp-content/uploads/2022/01/photo_davide_ragusa.png');
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.keys{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    padding: 1em;
+}
+
+.key{
+    height: 15%;
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: gray;
+    border-radius: 10%;
+    transition: all 0.5s ease-in 0.5ms;
+}
+
+.playing{
+    border: 0.1em solid peachpuff;
+    transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 800px) {
+    .keys {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .key{
+        width: 25%;
+        height: 20%;
+    }
+  }
